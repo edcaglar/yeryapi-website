@@ -1,22 +1,8 @@
 import Link from "next/link";
-import { MapPin, Phone, Clock, MessageCircle, Mail } from "lucide-react";
+import { MapPin, Phone, Clock, Mail } from "lucide-react";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
-import { Button } from "@/components/ui/button";
 
 export default function ContactInfo() {
-  const serviceRegions = [
-    "Ordu",
-    "Samsun",
-    "Trabzon",
-    "Giresun",
-    "Gümüşhane",
-    "Bayburt",
-    "Tokat",
-    "Amasya",
-    "Sinop",
-    "Kastamonu",
-  ];
-
   return (
     <div className="space-y-6">
       {/* Main Contact Info */}
