@@ -2,7 +2,7 @@ User-agent: *
 Allow: /
 
 # Sitemap
-Sitemap: https://yeryapisondaj.com/sitemap.xml
+Sitemap: https://yeryapigroup.com/sitemap.xml
 
 # Disallow admin or private areas (if any in future)
 # Disallow: /admin/

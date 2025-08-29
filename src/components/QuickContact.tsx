@@ -1,7 +1,7 @@
-import Link from "next/link"
-import { Phone, MapPin, MessageCircle } from "lucide-react"
-import { Button } from "@/components/ui/button"
-import { Card, CardContent } from "@/components/ui/card"
+import Link from "next/link";
+import { Phone, MapPin, MessageCircle } from "lucide-react";
+import { Button } from "@/components/ui/button";
+import { Card, CardContent } from "@/components/ui/card";
 
 export default function QuickContact() {
   return (
@@ -15,7 +15,9 @@ export default function QuickContact() {
                 <h2 className="text-2xl font-bold text-foreground mb-2">
                   Hızlı <span className="text-orange-primary">İletişim</span>
                 </h2>
-                <p className="text-muted-foreground">Projeleriniz için hemen bizimle iletişime geçin</p>
+                <p className="text-muted-foreground">
+                  Projeleriniz için hemen bizimle iletişime geçin
+                </p>
               </div>
 
               {/* Contact info */}
@@ -52,8 +54,14 @@ export default function QuickContact() {
 
               {/* Action buttons */}
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-                <Button asChild className="bg-orange-primary text-orange-primary-foreground hover:bg-orange-hover">
-                  <Link href="tel:+904526660045" className="flex items-center justify-center gap-2">
+                <Button
+                  asChild
+                  className="bg-orange-primary text-orange-primary-foreground hover:bg-orange-hover"
+                >
+                  <Link
+                    href="tel:+904526660045"
+                    className="flex items-center justify-center gap-2"
+                  >
                     <Phone className="h-4 w-4" />
                     Hemen Ara
                   </Link>
@@ -65,7 +73,7 @@ export default function QuickContact() {
                   className="border-orange-primary text-orange-primary hover:bg-orange-primary hover:text-orange-primary-foreground bg-transparent"
                 >
                   <Link
-                    href="https://wa.me/904526660045"
+                    href="https://wa.me/905388822812"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="flex items-center justify-center gap-2"
@@ -80,5 +88,5 @@ export default function QuickContact() {
         </div>
       </div>
     </section>
-  )
+  );
 }

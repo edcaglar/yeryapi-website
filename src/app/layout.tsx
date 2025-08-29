@@ -22,13 +22,13 @@ export const metadata: Metadata = {
     title: "Yer Yapı Sondaj & Jeofizik - Bilimsel Zemin Çözümleri",
     description:
       "Jeoloji, jeofizik ve inşaat mühendisliği alanında uzman ekibimizle zemin etüdü, sondaj, maden araştırma ve yeraltı suyu hizmetleri sunuyoruz.",
-    url: "https://yeryapisondaj.com",
+    url: "https://yeryapigroup.com",
     siteName: "Yer Yapı Sondaj & Jeofizik",
     locale: "tr_TR",
     type: "website",
     images: [
       {
-        url: "https://yeryapisondaj.com/og-image.png",
+        url: "https://yeryapigroup.com/og-image.png",
         width: 1200,
         height: 630,
         alt: "Yer Yapı Sondaj & Jeofizik - Bilimsel Zemin Çözümleri",
@@ -40,7 +40,7 @@ export const metadata: Metadata = {
     title: "Yer Yapı Sondaj & Jeofizik - Bilimsel Zemin Çözümleri",
     description:
       "Jeoloji, jeofizik ve inşaat mühendisliği alanında uzman ekibimizle zemin etüdü, sondaj, maden araştırma ve yeraltı suyu hizmetleri sunuyoruz.",
-    images: ["https://yeryapisondaj.com/og-image.png"],
+    images: ["https://yeryapigroup.com/og-image.png"],
   },
   robots: {
     index: true,
@@ -58,9 +58,9 @@ export const metadata: Metadata = {
     yandex: "your-yandex-verification-code",
   },
   alternates: {
-    canonical: "https://yeryapisondaj.com",
+    canonical: "https://yeryapigroup.com",
     languages: {
-      "tr-TR": "https://yeryapisondaj.com",
+      "tr-TR": "https://yeryapigroup.com",
     },
   },
   generator: "v0.app",
@@ -80,15 +80,15 @@ export default function RootLayout({
             __html: JSON.stringify({
               "@context": "https://schema.org",
               "@type": "LocalBusiness",
-              "@id": "https://yeryapisondaj.com/#organization",
+              "@id": "https://yeryapigroup.com/#organization",
               name: "Yer Yapı Sondaj & Jeofizik",
               legalName:
                 "YER YAPI SONDAJ JEOLOJİ JEOFİZİK İNŞAAT MÜHENDİSLİK MADEN ARAŞTIRMA SAN. TİC. LTD. ŞTİ",
               description:
                 "Jeoloji, jeofizik ve inşaat mühendisliği alanında uzman ekibimizle zemin etüdü, sondaj, maden araştırma ve yeraltı suyu hizmetleri sunuyoruz.",
-              url: "https://yeryapisondaj.com",
+              url: "https://yeryapigroup.com",
               telephone: "+90-452-666-00-45",
-              email: "info@yeryapisondaj.com",
+              email: "info@yeryapigroup.com",
               foundingDate: "2010",
               slogan: "Bilimsel Zemin Çözümleri, Güvenli Yapılar İçin",
               address: {
@@ -163,9 +163,9 @@ export default function RootLayout({
                 ],
               },
               sameAs: [
-                "https://www.linkedin.com/company/yeryapisondaj",
-                "https://www.facebook.com/yeryapisondaj",
-                "https://www.instagram.com/yeryapisondaj",
+                "https://www.linkedin.com/company/yeryapigroup",
+                "https://www.facebook.com/yeryapigroup",
+                "https://www.instagram.com/yeryapigroup",
               ],
             }),
           }}

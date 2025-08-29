@@ -9,7 +9,7 @@ export default function About() {
           {/* Section header */}
           <div className="text-center mb-12">
             <h2 className="text-3xl font-bold text-foreground mb-4">
-              Kısa <span className="text-orange-primary">Hakkımızda</span>
+              <span className="text-orange-primary">Hakkımızda</span>
             </h2>
             <div className="w-24 h-1 bg-orange-primary mx-auto"></div>
           </div>
@@ -24,12 +24,10 @@ export default function About() {
                 sunuyoruz.
               </p>
 
-              <p className="text-muted-foreground leading-relaxed">
-                Modern teknoloji ve deneyimli kadromuzla, zemin etüdü, sondaj
-                çalışmaları, maden araştırma ve yeraltı suyu tespiti
-                hizmetlerinde sektörün öncü firmalarından biriyiz. Her projede
-                güvenlik ve bilimsel yaklaşımı ön planda tutarak,
-                müşterilerimize en kaliteli hizmeti sunmayı hedefliyoruz.
+              <p className="text-lg text-muted-foreground leading-relaxed">
+                Şirketimiz 2010 yılında yurtiçi ve yurt dışı jeoteknik
+                çalışmaları yürütmek amacı ile kurulmuştur. Bu kapsamda ülke
+                genelinde birçok projede faaliyette bulunmuştur.
               </p>
 
               <div className="grid grid-cols-3 gap-4 pt-6">
@@ -47,7 +45,7 @@ export default function About() {
                   <div className="flex justify-center mb-2">
                     <Users className="h-8 w-8 text-orange-primary" />
                   </div>
-                  <div className="text-2xl font-bold text-foreground">500+</div>
+                  <div className="text-2xl font-bold text-foreground">100+</div>
                   <div className="text-sm text-muted-foreground">
                     Tamamlanan Proje
                   </div>
@@ -67,7 +65,7 @@ export default function About() {
             <div className="relative">
               <div className="aspect-square rounded-lg overflow-hidden bg-muted">
                 <Image
-                  src="/professional-engineering-team-with-geological-equi.png"
+                  src="/slider/su-drill.png"
                   alt="Yer Yapı Sondaj & Jeofizik Ekibi"
                   width={400}
                   height={400}

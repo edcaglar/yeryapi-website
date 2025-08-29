@@ -1,6 +1,7 @@
 import Link from "next/link";
-import { MapPin, Phone, Clock, Mail } from "lucide-react";
+import { MapPin, Phone, Clock, Mail, MessageCircle } from "lucide-react";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
+import { Button } from "./ui/button";
 
 export default function ContactInfo() {
   return (
@@ -49,10 +50,10 @@ export default function ContactInfo() {
             <div>
               <h3 className="font-semibold text-foreground mb-1">E-posta</h3>
               <Link
-                href="mailto:info@yeryapisondaj.com"
+                href="mailto:info@yeryapigroup.com"
                 className="text-orange-primary hover:text-orange-hover transition-colors"
               >
-                info@yeryapisondaj.com
+                info@yeryapigroup.com
               </Link>
             </div>
           </div>
@@ -69,11 +70,40 @@ export default function ContactInfo() {
                 <p>Pazartesi - Cuma: 08:00 - 18:00</p>
                 <p>Cumartesi: 09:00 - 16:00</p>
                 <p>Pazar: Kapalı</p>
-                <p className="text-sm text-orange-primary">
-                  Acil durumlar için 7/24 ulaşabilirsiniz
-                </p>
               </div>
             </div>
+          </div>
+
+          {/* Quick Action Buttons */}
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 pt-4 border-t border-border">
+            <Button
+              asChild
+              className="bg-orange-primary text-orange-primary-foreground hover:bg-orange-hover"
+            >
+              <Link
+                href="tel:+904526660045"
+                className="flex items-center justify-center gap-2"
+              >
+                <Phone className="h-4 w-4" />
+                Hemen Ara
+              </Link>
+            </Button>
+
+            <Button
+              asChild
+              variant="outline"
+              className="border-orange-primary text-orange-primary hover:bg-orange-primary hover:text-orange-primary-foreground bg-transparent"
+            >
+              <Link
+                href="https://wa.me/905388822812?text=Merhaba, hizmetleriniz hakkında bilgi almak istiyorum."
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex items-center justify-center gap-2"
+              >
+                <MessageCircle className="h-4 w-4" />
+                WhatsApp
+              </Link>
+            </Button>
           </div>
         </CardContent>
       </Card>

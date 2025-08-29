@@ -1,12 +1,12 @@
-"use client"
+"use client";
 
-import { useState } from "react"
-import Link from "next/link"
-import { Menu, X } from "lucide-react"
-import { Button } from "@/components/ui/button"
+import { useState } from "react";
+import Link from "next/link";
+import { Menu, X } from "lucide-react";
+import { Button } from "@/components/ui/button";
 
 export default function Header() {
-  const [isMenuOpen, setIsMenuOpen] = useState(false)
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   return (
     <header className="sticky top-0 z-50 w-full border-b border-border/40 bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
@@ -14,6 +14,15 @@ export default function Header() {
         <div className="flex h-16 items-center justify-between">
           {/* Logo */}
           <Link href="/" className="flex items-center space-x-2">
+            {/* <div className="relative w-10 h-10 flex-shrink-3">
+              <Image
+                src="/logo/logo-orange-without-text.png"
+                alt="Yer Yapı Sondaj & Jeofizik Logo"
+                fill
+                className="object-contain"
+                priority
+              />
+            </div> */}
             <div className="text-xl font-bold text-foreground">
               <span className="text-orange-primary">Yer Yapı</span>{" "}
               <span className="text-foreground">Sondaj & Jeofizik</span>
@@ -22,7 +31,10 @@ export default function Header() {
 
           {/* Desktop Navigation */}
           <nav className="hidden md:flex items-center space-x-8">
-            <Link href="/" className="text-sm font-medium text-foreground hover:text-orange-primary transition-colors">
+            <Link
+              href="/"
+              className="text-sm font-medium text-foreground hover:text-orange-primary transition-colors"
+            >
               Ana Sayfa
             </Link>
             <Link
@@ -31,14 +43,26 @@ export default function Header() {
             >
               İletişim
             </Link>
-            <Button asChild className="bg-orange-primary text-orange-primary-foreground hover:bg-orange-hover">
+            <Button
+              asChild
+              className="bg-orange-primary text-orange-primary-foreground hover:bg-orange-hover"
+            >
               <Link href="tel:+904526660045">Hemen Ara</Link>
             </Button>
           </nav>
 
           {/* Mobile menu button */}
-          <Button variant="ghost" size="sm" className="md:hidden" onClick={() => setIsMenuOpen(!isMenuOpen)}>
-            {isMenuOpen ? <X className="h-5 w-5" /> : <Menu className="h-5 w-5" />}
+          <Button
+            variant="ghost"
+            size="sm"
+            className="md:hidden"
+            onClick={() => setIsMenuOpen(!isMenuOpen)}
+          >
+            {isMenuOpen ? (
+              <X className="h-5 w-5" />
+            ) : (
+              <Menu className="h-5 w-5" />
+            )}
           </Button>
         </div>
 
@@ -73,5 +97,5 @@ export default function Header() {
         )}
       </div>
     </header>
-  )
+  );
 }

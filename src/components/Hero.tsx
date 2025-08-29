@@ -4,7 +4,7 @@ import { ArrowRight, Phone } from "lucide-react";
 
 export default function Hero() {
   return (
-    <section className="relative min-h-[90vh] flex items-center justify-center bg-gradient-to-br from-background via-background to-card">
+    <section className="relative min-h-[92vh] flex items-center justify-center bg-gradient-to-br from-background via-background to-card">
       {/* Background pattern overlay */}
       <div className="absolute inset-0 bg-[radial-gradient(circle_at_50%_50%,rgba(255,138,76,0.1),transparent_50%)]" />
 

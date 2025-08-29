@@ -1,8 +1,14 @@
 import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
-  output: "export",
-  images: { unoptimized: true },
+  async rewrites() {
+    return [
+      {
+        source: "/logo",
+        destination: "/logo/transparan-logo-zoom.png",
+      },
+    ];
+  },
   /* config options here */
 };
 

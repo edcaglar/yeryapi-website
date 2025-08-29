@@ -10,31 +10,39 @@ const slides = [
     id: 1,
     title: "Zemin Etüdü Çalışmaları",
     description: "Bilimsel yöntemlerle zemin analizi ve raporlama hizmetleri",
-    image: "/geological-soil-testing-equipment-in-field.png",
+    image: "/slider/manzara.jpeg",
   },
   {
     id: 2,
     title: "Sondaj Makineleri",
     description: "Modern sondaj ekipmanları ile hassas çalışma",
-    image: "/drilling-machine-equipment-construction-site.png",
+    image: "/slider/araba-manzara.jpeg",
   },
   {
     id: 3,
     title: "Jeofizik Ölçüm Sahası",
     description: "Yeraltı yapısının detaylı analizi ve haritalandırması",
-    image: "/geophysical-measurement-equipment-field-survey.png",
+    image: "/slider/araba.jpeg",
   },
   {
     id: 4,
     title: "Maden Araştırma",
     description: "Rezerv tespiti ve jeolojik değerlendirme çalışmaları",
-    image: "/mining-exploration-geological-survey-equipment.png",
+    image: "/slider/direk.jpeg",
   },
   {
     id: 5,
     title: "Su Arama Sondajı",
     description: "Yeraltı suyu tespiti ve kuyu açma hizmetleri",
-    image: "/water-well-drilling-equipment-groundwater-explorat.png",
+    image: "/slider/makine.jpeg",
+  },
+  {
+    id: 6,
+    image: "/slider/su-drill.png",
+  },
+  {
+    id: 7,
+    image: "/slider/olcum.jpeg",
   },
 ];
 
@@ -69,7 +77,7 @@ export default function Slider() {
                   <div className="relative h-96 md:h-[28rem] lg:h-[36rem] group cursor-pointer">
                     <Image
                       src={slide.image || "/placeholder.svg"}
-                      alt={slide.title}
+                      alt={slide.title || "Slide image"}
                       fill
                       className="object-cover transition-transform duration-300 group-hover:scale-105"
                     />

@@ -14,7 +14,7 @@ export const metadata: Metadata = {
     title: "İletişim - Yer Yapı Sondaj & Jeofizik",
     description:
       "Yer Yapı Sondaj & Jeofizik ile iletişime geçin. Zemin etüdü, sondaj, jeofizik ve maden araştırma hizmetleri için bize ulaşın.",
-    url: "https://yeryapisondaj.com/iletisim",
+    url: "https://yeryapigroup.com/iletisim",
   },
 };
 
@@ -71,7 +71,7 @@ export default function ContactPage() {
               </div>
               <div>
                 <div className="text-2xl font-bold text-orange-primary mb-2">
-                  500+
+                  100+
                 </div>
                 <div>Başarıyla tamamlanmış proje</div>
               </div>
