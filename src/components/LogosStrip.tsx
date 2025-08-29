@@ -26,7 +26,7 @@ export default function LogosStrip() {
         <div className="grid grid-cols-2 md:grid-cols-2 lg:grid-cols-4 gap-8 items-center">
           {partners.map((partner, index) => (
             <div key={index} className="flex items-center justify-center">
-              <div className="relative w-28 h-20 opacity-60 hover:opacity-100 transition-opacity grayscale hover:grayscale-0">
+              <div className="relative w-28 h-20 opacity-60 hover:opacity-100 transition-opacity hover:grayscale-0">
                 <Image
                   src={partner.logo || "/placeholder.svg"}
                   alt={partner.name}
